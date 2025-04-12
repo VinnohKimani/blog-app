@@ -1,15 +1,13 @@
-import { useState } from "react";
-
-import "./App.css";
-
+import { SearchBar } from "./Components/SearchBar.jsx";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <div className="w-[100px]  h-[100px] caret-fuchsia-500 mt-[50px] ml-[50]"></div>
-    </>
+    <main className="min-h-screen flex p-8  gap-3 bg-gray-50">
+      <div className="w-[70%] space-y-3">
+        <h1 className="font-semibold text-2xl">Latest Blogs</h1>
+        <SearchBar />
+      </div>
+      <div className="flex-1">News</div>
+    </main>
   );
 }
 
